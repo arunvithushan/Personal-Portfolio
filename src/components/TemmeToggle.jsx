@@ -1,3 +1,4 @@
+// src/components/TemmeToggle.jsx
 import { Moon, Sun } from "lucide-react";
 import { useState, useEffect } from "react";
 import { cn } from "../lib/utils";
@@ -5,6 +6,7 @@ import { cn } from "../lib/utils";
 export const TemmeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
+  // Initialize theme on mount
   useEffect(() => {
     const storedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -25,6 +27,7 @@ export const TemmeToggle = () => {
     }
   }, []);
 
+  // Toggle theme
   const toggleTheme = () => {
     const newTheme = isDarkMode ? "light" : "dark";
     setIsDarkMode(!isDarkMode);

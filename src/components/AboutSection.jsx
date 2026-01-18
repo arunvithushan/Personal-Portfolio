@@ -23,7 +23,8 @@ export const AboutSection = () => {
                                 Get In Touch
                             </a>
                             <a
-                                href="C:\Users\ASUS\Desktop\arun\Personal Portfolio\CV.pdf"
+                                href="/vithu (1).pdf"
+                                download
                                 className="px-6 py-2 rounded-md border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
                             >
                                 Download Resume

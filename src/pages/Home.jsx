@@ -6,10 +6,13 @@ import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";  
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection  } from "../components/ContactSection";
+import { Footer } from "../components/Footer";
+import { Toaster } from "@/components/ui/toaster";  
 
 export default function Home() {
   return (
     <div className="relative min-h-screen bg-[hsl(var(--background))] transition-colors duration-300">
+      
       {/* Background Stars */}
       <div className="absolute inset-0 z-0">
         <StarBackground />
@@ -26,13 +29,19 @@ export default function Home() {
       </div>
 
       {/* Main Content */}
-      <main >
+      <main>
         <HeroSection />
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
         <ContactSection />
       </main>
+
+      {/* Footer */}
+      <Footer />
+
+      {/* ✅ REQUIRED FOR TOAST */}
+      <Toaster />
     </div>
   );
 }

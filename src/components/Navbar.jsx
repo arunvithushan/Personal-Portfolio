@@ -7,6 +7,7 @@ const navItems = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
+  
 ];
 
 export const Navbar = () => {
@@ -28,9 +29,9 @@ export const Navbar = () => {
           : "py-5 bg-[hsl(var(--card)/0.6)]"
       )}
     >
-      <div className="container mx-auto flex items-center justify-between px-4">
+      <div className="container mx-auto flex items-center justify-between px-6">
         {/* Logo */}
-        <a href="#hero" className="text-xl font-bold text-[hsl(var(--text))]">
+        <a href="#hero" className="text-2xl font-bold text-[hsl(var(--text))]">
           <span className="text-glow">pedroTech</span> portfolio
         </a>
 
